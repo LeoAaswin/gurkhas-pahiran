@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .team-leadership-section{
+        padding: 0rem 0rem !important;
+    }
+    .founder-image-section {
+        max-height: 500px !important;
+    }
+}
+    

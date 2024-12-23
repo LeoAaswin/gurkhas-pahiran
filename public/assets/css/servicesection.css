@@ -1,0 +1,17 @@
+.service-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-image-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-item {
+    overflow: hidden;
+  }

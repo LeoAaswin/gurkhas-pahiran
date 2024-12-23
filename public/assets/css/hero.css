@@ -1,0 +1,71 @@
+.main-hero-area {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-background-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+  }
+  
+  .hero-content {
+    color: #333333;
+  }
+  
+  .hero-content h1 {
+    color: #2c3e50;
+  }
+  
+  .hero-content .text-primary {
+    color: #3498db !important;
+  }
+  
+  .hero-stats .stat-item p {
+    color: #7f8c8d;
+  }
+  
+  .hero-cta .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .hero-cta .btn-outline-light {
+    border-color: #3498db;
+    color: #3498db;
+  }
+  
+  .hero-cta .btn-outline-light:hover {
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  .hero-scroll-indicator {
+    color: #3498db;
+  }
+  
+  .hero-scroll-indicator .scroll-text {
+    color: #3498db;
+  }
+  
+  .hero-scroll-indicator i {
+    color: #3498db;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
