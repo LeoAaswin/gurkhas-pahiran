@@ -33,14 +33,61 @@ export default function HistoricalImpact() {
         
         <div className="row">
           {serviceHighlights.map((highlight, index) => (
-            <div key={index} className="col-md-4 mb-4">
-              <div className="service-highlight-card text-center p-4 bg-white rounded shadow-sm">
-                <div className="highlight-icon mb-3">
+            <div key={index} className="col-md-4 mb-4 d-flex">
+              <div 
+                className="service-highlight-card text-center p-4 bg-white rounded shadow-sm" 
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  width: '100%',
+                  minHeight: '350px',
+                  transition: 'transform 0.3s ease',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'scale(1.05)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'scale(1)';
+                }}
+              >
+                <div 
+                  className="highlight-icon mb-3" 
+                  style={{ 
+                    width: '100px', 
+                    height: '100px', 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center', 
+                    borderRadius: '50%', 
+                    backgroundColor: '#f0f0f0',
+                    marginBottom: '20px'
+                  }}
+                >
                   <highlight.icon className="text-black display-4" />
                 </div>
-                <h3 className="h4 text-black mb-2">{highlight.number}</h3>
-                <h4 className="text-muted mb-3">{highlight.label}</h4>
-                <p className="text-black">{highlight.description}</p>
+                <div style={{ textAlign: 'center', flex: 1 }}>
+                  <h3 className="h4 text-black mb-2" style={{ fontSize: '1.5rem' }}>
+                    {highlight.number}
+                  </h3>
+                  <h4 className="text-muted mb-3" style={{ fontSize: '1.2rem' }}>
+                    {highlight.label}
+                  </h4>
+                  <p 
+                    className="text-black" 
+                    style={{ 
+                      fontSize: '1rem', 
+                      lineHeight: '1.6',
+                      maxWidth: '250px',
+                      margin: '0 auto'
+                    }}
+                  >
+                    {highlight.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

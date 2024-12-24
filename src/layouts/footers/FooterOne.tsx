@@ -6,8 +6,8 @@ export default function FooterOne() {
   return (
     <footer className="main-footer bg-black text-white py-10" style={{ paddingTop: '6rem', paddingBottom: '6rem'}}>
       <div className="container">
-        <div className="row g-4">
-          <div className="col-lg-4 col-md-6 mb-4">
+        <div className="row g-4 d-flex justify-content-between align-items-start">
+          <div className="col-lg-4 text-lg-start text-center">
             <div className="logo">
               <Link href="/">
               <Image
@@ -30,25 +30,25 @@ export default function FooterOne() {
             </div>
           </div>
           
-          <div className="col-lg-3 col-md-6 mb-4">
+          <div className="col-lg-3 text-lg-center text-center">
             <h4 className="text-white mb-4 position-relative pb-2 footer-heading">Quick Links</h4>
-            <ul className="list-unstyled footer-links">
-              <li className="mb-2">
+            <ul className="list-unstyled footer-links" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              <li className="mb-2" style={{ textAlign: 'left', width: '100px'}}>
                 <Link href="/" className="text-white text-decoration-none">
                   <i className="fas fa-chevron-right me-2"></i> Home
                 </Link>
               </li>
-              <li className="mb-2">
+              <li className="mb-2" style={{ textAlign: 'left', width: '100px'}}>
                 <Link href="/about" className="text-white text-decoration-none">
                   <i className="fas fa-chevron-right me-2"></i> About Us
                 </Link>
               </li>
-              <li className="mb-2">
+              <li className="mb-2" style={{ textAlign: 'left', width: '100px'}}>
                 <Link href="/services" className="text-white text-decoration-none">
                   <i className="fas fa-chevron-right me-2"></i> Services
                 </Link>
               </li>
-              <li>
+              <li className="mb-2" style={{ textAlign: 'left', width: '100px'}}>
                 <Link href="/contact" className="text-white text-decoration-none">
                   <i className="fas fa-chevron-right me-2"></i> Contact
                 </Link>
@@ -56,9 +56,9 @@ export default function FooterOne() {
             </ul>
           </div>
           
-          <div className="col-lg-5 col-md-6 mb-4">
+          <div className="col-lg-4 text-lg-end text-center">
             <h4 className="text-white mb-4 position-relative pb-2 footer-heading">Follow Us</h4>
-            <div className="social-icons d-flex align-items-center">
+            <div className="social-icons d-flex justify-content-lg-end justify-content-center align-items-center">
               <Link 
                 href="https://facebook.com/gurkhas-pahiran" 
                 target="_blank" 
@@ -88,7 +88,6 @@ export default function FooterOne() {
                 <i className="fab fa-twitter fa-2x"></i>
               </Link>
             </div>
-            
           </div>
         </div>
         

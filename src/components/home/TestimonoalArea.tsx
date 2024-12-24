@@ -77,15 +77,52 @@ export default function TestimonoalArea() {
         >
           {testimonials.map((testimonial) => (
             <SplideSlide key={testimonial.id}>
-              <div className="testimonial-item wow fadeInUp">
-                <div className="author">
-                  <img src={testimonial.image} alt={testimonial.name} />
+              <div className="testimonial-item wow fadeInUp" style={{ 
+                display: 'flex', 
+                flexDirection: 'column', 
+                height: '100%', 
+                justifyContent: 'space-between',
+                padding: '20px',
+                textAlign: 'center',
+                border: '1px solid #e0e0e0',
+                borderRadius: '10px',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+              }}>
+                <div className="author mb-3" style={{ 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  marginBottom: '15px' 
+                }}>
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name} 
+                    style={{ 
+                      width: '100px', 
+                      height: '100px', 
+                      borderRadius: '50%', 
+                      objectFit: 'cover',
+                      border: '3px solid #f0f0f0'
+                    }} 
+                  />
                 </div>
-                <div className="text">
+                <div className="text mb-3" style={{ 
+                  flexGrow: 1, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center',
+                  minHeight: '150px',
+                  fontSize: '0.9rem',
+                  lineHeight: '1.6',
+                  color: '#333'
+                }}>
                   {testimonial.text}
                 </div>
                 <div className="testi-des">
-                  <h5>{testimonial.name}</h5>
+                  <h5 style={{
+                    marginTop: '10px',
+                    fontWeight: 'bold',
+                    color: '#444'
+                  }}>{testimonial.name}</h5>
                 </div>
               </div>
             </SplideSlide>

@@ -28,11 +28,11 @@ export default function TeamLeadership() {
       style={{ 
         backgroundColor: 'black', 
         color: 'white',
-        padding: '2rem 16rem'
       }}
     >
+      <div className="container">
         <h2 className=" text-center h1" style={{
-        marginBottom: '4rem', marginTop: '3rem'}}>Meet the Founders</h2>
+        marginBottom: '4rem', marginTop: '4rem'}}>Meet the Founders</h2>
       <div className="container-fluid px-5">
         <div className="row g-0 align-items-stretch">
           {teamMembers.map((member, index) => (
@@ -114,6 +114,7 @@ export default function TeamLeadership() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   )

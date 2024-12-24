@@ -72,7 +72,6 @@ export default function ServiceArea() {
                 </div>
               </div>
             ))}
-            <a className="theme-btn w-auto mx-auto" href="/service">See More</a>
           </div>
         </div>
       </section>

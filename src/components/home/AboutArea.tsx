@@ -31,7 +31,7 @@ export default function AboutArea() {
           <div className="row">
 
             <div className="col-lg-3 col-sm-3">
-              <h2 className="about-pre-title">About Us</h2>
+              <h2 className="h1">About Us</h2>
             </div>
             <div className="col-lg-9 col-sm-9">
               <div className="about-content-part wow fadeInUp delay-0-2s">
